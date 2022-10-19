@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeBrand</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-image"></div>
+    
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            
+            <nav>
+                <svg class="close" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 12 0 C 5.371094 0 0 5.371094 0 12 C 0 18.628906 5.371094 24 12 24 C 18.628906 24 24 18.628906 24 12 C 24 5.371094 18.628906 0 12 0 Z M 17.390625 15.429688 L 15.429688 17.390625 L 12 13.960938 L 8.570313 17.390625 L 6.609375 15.429688 L 10.039063 12 L 6.609375 8.570313 L 8.570313 6.609375 L 12 10.039063 L 15.429688 6.609375 L 17.390625 8.570313 L 13.960938 12 Z"/></svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+            </nav>
+
+            <svg class="menu" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"/></svg>
+        </header>
+
+        <section class="hero">           
+                <h1>Regain your confidence on the court.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et excepturi magni tempore? Ad officiis soluta est doloremque doloribus, perferendis ipsam itaque facilis molestias, blanditiis alias optio! Ad, suscipit aspernatur.</p>
+        </section>
+
+        <section class="more-info">           
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero necessitatibus placeat dolorem corrupti repudiandae nulla perferendis veritatis?</p>
+                </div>
+                <img src="img/istockphoto-1292261872-170667a.jpg" alt="" srcset="">
+            </div>
+        </section>
+
+        <section class="more-info">           
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero necessitatibus placeat dolorem corrupti repudiandae nulla perferendis veritatis?</p>
+                </div>
+                <img src="img/maksim-larin-NOpsC3nWTzY-unsplash.jpg" alt="" srcset="">
+            </div>
+        </section>
+
+        <section class="more-info">           
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero necessitatibus placeat dolorem corrupti repudiandae nulla perferendis veritatis?</p>
+                </div>
+                <img src="img/the-dk-photography-NUoPWImmjCU-unsplash.jpg" alt="" srcset="">
+            </div>
+        </section>
+       
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+        menu.addEventListener('click',() => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click',() => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+
+</body>
+</html>
